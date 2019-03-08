@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-const hostname = '127.0.0.1'   // set constants
+const hostname = '0.0.0.0'   // set constants
 const port = 3002
 
 app.get('/', function (req, res) {
@@ -10,6 +10,19 @@ app.get('/', function (req, res) {
 
 app.get('/hello', (req, res) => {
   res.send('Hello World!')
+})
+
+app.get('/zipcode', (req, res) => {
+  res.send('64468')
+})
+app.get('/city', (req, res) => {
+  res.send('Maryville')
+})
+app.get('/state', (req, res) => {
+  res.send('Missouri')
+})
+app.get('/country', (req, res) => {
+  res.send('United States of America')
 })
 
 app.get('/big',  (req, res) =>{
@@ -30,7 +43,7 @@ app.use((req, res, next) => {
 })
 
 app.listen(port, hostname, () => {
-  console.log(`Example app listening at http://${hostname}:${port}/`)
+  console.log(`Example app listening at http://localhost:${port}/`)
   console.log('Hit CTRL-C CTRL-C to stop\n')
 })
 
