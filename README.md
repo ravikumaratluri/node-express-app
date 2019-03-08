@@ -5,7 +5,7 @@
 ## Links
 
 - [Demo](https://ravikumaratluri.github.io/node-express-app/)
-- [Source](https://github.com/denisecase/node-express-app)
+- [Source](https://github.com/ravikumaratluri/node-express-app)
 
 ## Requirements
 
